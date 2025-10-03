@@ -17,9 +17,12 @@
 
     #particles-js {
       position: fixed;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
-      z-index: -1;
+      z-index: 0;
+      pointer-events: none;
     }
 
     .content {
@@ -138,7 +141,7 @@
   </div>
 
   <!-- Particles.js Script -->
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/VincentGarreau/particles.js/particles.min.js"></script>
   <script>
     particlesJS("particles-js", {
       "particles": {
@@ -196,5 +199,6 @@
       typewriter.style.width = '0';
     };
   </script>
+
 </body>
 </html>
